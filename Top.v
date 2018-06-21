@@ -14,7 +14,10 @@ Counter DUT2(
 
 ClockDivider(
 .clk_div(clk_div_t),
-.EN(w2),
+.D(w2),
 .clk(clk_t),
-.rst(rst_t)
+.rst(rst_t),
+
 );
+
+endmodule
