@@ -3,7 +3,7 @@ module Comparator(
 	output reg out
 );
 
-reg[31:0] cntNumber = 25 0000000;
+reg[31:0] cntNumber = 250000000;
 
 always@(counter or cntNumber) begin
 	if(counter != cntNumber)
