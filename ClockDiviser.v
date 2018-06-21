@@ -1,15 +1,15 @@
 module ClockDiviser(
-	output clk_div,
-	input EN,
+	input D,
 	input clk,
-	input rst
+	input rst,
+	output reg clk_div
 );
 
-always@(posedge  clk)
-	if(EN == 1)
-		clk <= clk;
+always@(posedge  clk)begin
+	if(D == 1)
+		clk_div <= clk_div;
 		else
-		clk <= ~clk;
+		clk_div <= ~clk_div;
 	
 end
 endmodule
